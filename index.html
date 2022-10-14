@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bye</title>
+    <link rel="shortcut icon" type="img/ico "href="img/bird.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0202095235.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script data-ad-client="ca-pub-6893016174816904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+</head>
+<body oncontextmenu="return false;">
+        <h1 class="title">
+
+        <div class="wrapper">
+            <div class="btn">
+              <form action="https://bye.lol/mail">
+              <button type="submit">Enter</button>
+
+              <div class="social-menu">
+                <ul>
+                  <li><a href="https://twitter.com/capirs"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/exploitzme"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/watch?v=2xWkATdMQms"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+
+              </form>
+        </h1>
+
+
+
+        <div id="preloader">
+            <div class="p">CHECKING BROWSER</div>
+        </div>
+
+        <script>
+
+        paceOptions = {
+        ajax: true,
+        document: true,
+        eventLag: false
+        };
+
+        Pace.on('done', function() {
+        $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+        $('#preloader').delay(2000).animate({top: '-140%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+        TweenMax.from(".title", 2, {
+             delay: 2,
+                  y: 10,
+                  opacity: 0,
+                  ease: Expo.easeInOut
+            })
+       });
+
+      </script>
+
+
+</body>
+</html>
