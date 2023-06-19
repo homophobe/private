@@ -1,5 +1,4 @@
-**project bye**
+`Project Bye`
 
-probably going to update when I get bored of this landing page
-
+`Probably going to update when I get bored of this landing page`
 ,--,
